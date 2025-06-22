@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="menu-bar">
+        <nav class="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-900">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+                <a href="https://flowbite.com" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">CyberPhone</span>
+                </a>
+                <button data-collapse-toggle="mega-menu-full" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="mega-menu-full" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div id="mega-menu-full"
+                    class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+                    <ul class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                                aria-current="page">Trang chủ</a>
+                        </li>
+                        <li>
+                            <button id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown"
+                                class="flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Danh mục 
+                                <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg></button>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Về chúng tôi</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Chính sách</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Liên Hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section class="Banner mx-auto px-4 max-w-screen-xl mt-6">
+        <img src="../img/BannerIphone.jpg" alt="Banner" class="w-full h-auto rounded-xl shadow-md object-cover" />
+    </section>
+    <section class="Content">
+        <div class="mt-10">
+            <input type="text" placeholder="Tìm kiếm..."
+                class="block w-1/2 mx-auto p-3 border border-gray-300 rounded-xl shadow" />
+        </div>
+        <h2 class="text-5xl font-bold text-cyan-400 text-center mt-8">
+            Danh sách sản phẩm
+        </h2>
+        <section class="item flex justify-center gap-6 ">
+            <div class="card-item mt-10 flex justify-center flex-wrap gap-6">
+                <!-- Item 1 -->
+                <div
+                    class="w-60 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img src="../img/Iphone12.jpg" alt="" class="rounded-t-lg w-full h-[200px] object-cover" />
+
+                    </a>
+                    <div class="p-4">
+                        <a href="#">
+                            <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
+                                Iphone 12
+                            </h5>
+                        </a>
+                        <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">
+                             iPhone 12 với thiết kế viền phẳng hiện đại, chip A14 Bionic mạnh mẽ, màn hình OLED sắc nét và hỗ trợ 5G – mang đến hiệu năng vượt trội trong một thân máy nhỏ gọn.
+                        </p>
+                        <a href="#"
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            Thêm vào giỏ hàng
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Thêm nhiều item nữa nếu cần -->
+            </div>
+             <div class="card-item mt-10 flex justify-center flex-wrap gap-6">
+                <!-- Item 2 -->
+                <div
+                    class="w-60 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img src="../img/Iphone13pr.png" alt="" class="rounded-t-lg w-full h-[200px] object-cover" />
+
+                    </a>
+                    <div class="p-4">
+                        <a href="#">
+                            <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
+                                Iphone 13
+                            </h5>
+                        </a>
+                        <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">
+                            iPhone 13 nổi bật với cụm camera chéo độc đáo, chip A15 Bionic siêu mạnh, pin lâu hơn và màn hình Super Retina XDR cho trải nghiệm hình ảnh cực kỳ sống động.
+</p> 
+                        </p>
+                        <a href="#"
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            Thêm vào giỏ hàng
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Thêm nhiều item nữa nếu cần -->
+            </div>
+             <div class="card-item mt-10 flex justify-center flex-wrap gap-6">
+                <!-- Item 3 -->
+                <div
+                    class="w-60 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img src="../img/Iphone14.jpg" alt="" class="rounded-t-lg w-full h-[200px] object-cover" />
+
+                    </a>
+                    <div class="p-4">
+                        <a href="#">
+                            <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
+                                Iphone 14
+                            </h5>
+                        </a>
+                        <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">
+                            iPhone 14 nổi bật với cụm camera chéo độc đáo, chip A15 Bionic siêu mạnh, pin lâu hơn và màn hình Super Retina XDR cho trải nghiệm hình ảnh cực kỳ sống động.
+</p> 
+                        </p>
+                        <a href="#"
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            Thêm vào giỏ hàng
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Thêm nhiều item nữa nếu cần -->
+            </div>
+                <div class="card-item mt-10 flex justify-center flex-wrap gap-6">
+                <!-- Item 4 -->
+                <div
+                    class="w-60 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img src="../img/Iphone15.jpg" alt="" class="rounded-t-lg w-full h-[200px] object-cover" />
+
+                    </a>
+                    <div class="p-4">
+                        <a href="#">
+                            <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
+                                Iphone 15
+                            </h5>
+                        </a>
+                        <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">
+                            iPhone 15 nổi bật với cụm camera chéo độc đáo, chip A15 Bionic siêu mạnh, pin lâu hơn và màn hình Super Retina XDR cho trải nghiệm hình ảnh cực kỳ sống động.
+</p> 
+                        </p>
+                        <a href="#"
+                            class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            Thêm vào giỏ hàng
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Thêm nhiều item nữa nếu cần -->
+            </div>
+        </section>
+
+
+    </section>
+</body>
+
+</html>
