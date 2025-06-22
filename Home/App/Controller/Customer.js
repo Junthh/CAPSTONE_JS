@@ -16,19 +16,21 @@ const renderProductCards = (list) => {
 
   list.forEach((product) => {
     html += `
-    <div class="w-60 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-      <img src="../img/${product.img}" alt="${product.name}" class="rounded-t-lg w-full h-[200px] object-cover" />
-      <div class="p-4">
-        <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
-          ${product.name}
-        </h5>
-        <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">${product.desc}</p>
-        <button data-id="${product.id}"
-                class="btn-add-to-cart inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800">
-          Thêm vào giỏ hàng
-        </button>
-      </div>
-    </div>`;
+  <div class="w-60 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <img src="../../assets/${product.img}" alt="${product.name}" class="rounded-t-lg w-full h-[200px] object-cover" />
+    <div class="p-4">
+      <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
+        ${product.name}
+      </h5>
+      <p class="mb-2 text-sm font-semibold text-green-600 dark:text-green-400">Giá: ${product.price.toLocaleString()}₫</p>
+      <p class="mb-3 text-sm text-gray-700 dark:text-gray-400">${product.desc}</p>
+      <button data-id="${product.id}"
+              class="btn-add-to-cart inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800">
+        Thêm vào giỏ hàng
+      </button>
+    </div>
+  </div>
+`;
   });
 
   // Gắn vào .card-item
